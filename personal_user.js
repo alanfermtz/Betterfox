@@ -194,7 +194,7 @@ user_pref("browser.newtabpage.activity-stream.showSponsoredCheckboxes", false);
 user_pref("browser.download.manager.addToRecentDocs", false);
 
 /** PDF ***/
-user_pref("browser.download.open_pdf_attachments_inline", true);
+user_pref("browser.download.open_pdf_attachments_inline", false);
 
 /** TAB BEHAVIOR ***/
 user_pref("browser.bookmarks.openInTabClosesMenu", false);
