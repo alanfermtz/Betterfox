@@ -206,14 +206,6 @@ user_pref("findbar.highlightAll", true);
 // visit https://github.com/yokoffing/Betterfox/blob/main/Smoothfox.js
 // Enter your scrolling overrides below this line:
 
-
-/****************************************************************************
- * START: MY OVERRIDES                                                      *
-****************************************************************************/
-// visit https://github.com/yokoffing/Betterfox/wiki/Common-Overrides
-// visit https://github.com/yokoffing/Betterfox/wiki/Optional-Hardening
-// Enter your personal overrides below this line:
-
 /****************************************************************************************
  * OPTION: ZEN SMOOTH SCROLLING                                                         *
 ****************************************************************************************/
@@ -230,12 +222,43 @@ user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaMS", 25);
 user_pref("general.smoothScroll.msdPhysics.slowdownSpringConstant", 250);
 user_pref("mousewheel.default.delta_multiplier_y", 200);
 
+/****************************************************************************
+ * START: MY OVERRIDES                                                      *
+****************************************************************************/
+// visit https://github.com/yokoffing/Betterfox/wiki/Common-Overrides
+// visit https://github.com/yokoffing/Betterfox/wiki/Optional-Hardening
+// Enter your personal overrides below this line:
+
+// PREF: disable Nova
+user_pref("browser.nova.enabled", false);
+
+// PREF: improve font rendering by using DirectWrite everywhere like Chrome [WINDOWS]
+user_pref("gfx.font_rendering.cleartype_params.rendering_mode", 5);
+user_pref("gfx.font_rendering.cleartype_params.cleartype_level", 100);
+user_pref("gfx.font_rendering.directwrite.use_gdi_table_loading", false);
+//user_pref("gfx.font_rendering.cleartype_params.enhanced_contrast", 50); // 50-100 [OPTIONAL]
+
+// PREF: disable Firefox Sync
+user_pref("identity.fxaccounts.enabled", false);
+
+// PREF: disable the Firefox View tour from popping up
+user_pref("browser.firefox-view.feature-tour", "{\"screen\":\"\",\"complete\":true}");
+
+// PREF: disable login manager
+user_pref("signon.rememberSignons", false);
+
+// PREF: disable address and credit card manager
+user_pref("extensions.formautofill.addresses.enabled", false);
+user_pref("extensions.formautofill.creditCards.enabled", false);
+
+// PREF: disable passkeys
+user_pref("security.webauth.webauthn", false);
+
 /****************************************************************************************
  * OPTION: TRANSLATION                                                       *
 ****************************************************************************************/
 user_pref("browser.translations.automaticallyPopup", false);
 user_pref("browser.translations.enable", true);
-
 
 /****************************************************************************
  * END: BETTERFOX                                                           *
